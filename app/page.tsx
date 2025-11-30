@@ -7,7 +7,7 @@ import TechStack from "@/components/TechStack";
 export default function Home() {
   return (
     // 1. 改成 min-h-screen 防止内容截断
-    <div className="min-h-screen w-full bg-black flex flex-col items-center justify-center overflow-x-hidden pt-20"> 
+    <div className="min-h-screen w-full bg-black flex flex-col items-center justify-center overflow-x-hidden"> 
       
       {/* 背景动画 */}
       <div className="absolute inset-0 w-full h-full bg-[radial-gradient(#333_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_70%,transparent_100%)] opacity-50 pointer-events-none" />
@@ -49,7 +49,7 @@ export default function Home() {
           className="flex flex-col sm:flex-row gap-4 justify-center items-center mt-10"
         >
           <Link href="/projects">
-            <motion.button
+            <motion.button   
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="px-8 py-3 bg-white text-black rounded-full font-medium hover:bg-gray-200 transition-colors"

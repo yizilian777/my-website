@@ -26,20 +26,6 @@ const projects = [
 export default function Projects() {
   return (
     <div className="min-h-screen w-full bg-black text-white pt-24 px-6 pb-16">
-      
-      {/* 返回首页按钮 */}
-      <div className="max-w-4xl mx-auto mb-8">
-        <Link href="/">
-          <motion.button
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="text-gray-400 hover:text-white transition-colors flex items-center gap-2"
-          >
-            <span>←</span> 返回首页
-          </motion.button>
-        </Link>
-      </div>
-
       {/* 标题区域 */}
       <motion.div 
         initial={{ opacity: 0, y: 20 }}
